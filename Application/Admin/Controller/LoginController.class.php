@@ -17,6 +17,7 @@ class LoginController extends Controller{
 		$info = D('User')->in(I('post.user'),I('post.password'));
 		if($info)
 			$this->ajaxReturn(array("error"=>0,"msg"=>session("uname")));
+			//session('uname',$user['uname']);
 		else
 			$this->ajaxReturn(array("error"=>1,"msg"=>"用户名或者密码错误!"));
 	}
