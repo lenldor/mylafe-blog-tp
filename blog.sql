@@ -16,9 +16,6 @@ CREATE TABLE IF NOT EXISTS `lt_album` (
   PRIMARY KEY (`al_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='相册表';
 
-INSERT INTO `lt_album` (`al_id`, `al_name`, `al_img`, `al_remark`, `al_time`, `al_hit`, `al_view`, `al_ip`, `al_root`, `al_from`)
-VALUES (1, 'mylafe', '/Upload/Album/1457317476.jpg', '', 1457317455, 5, 1, '127.0.0.1', 'admin', 'Win 10');
-
 CREATE TABLE IF NOT EXISTS `lt_album_c` (
   `alc_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `alc_pid` int(11) NOT NULL COMMENT '相册ID',
